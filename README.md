@@ -8,3 +8,4 @@ cd ~/.dotfiles
 ./install.sh
 ```
 <!-- initial commit -->
+<!-- add .bash_aliases -->
