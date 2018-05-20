@@ -9,3 +9,10 @@ cd ~/.dotfiles
 ```
 <!-- initial commit -->
 <!-- add .bash_aliases -->
+
+## what's here
+
+- `.zshrc` / `.bash_aliases` — prompt, history settings, a few aliases
+- `.vimrc` — the editor config i've been carrying since 2018
+- `.tmux/` — status line and the bindings my hands know
+- `bin/` — small utilities
