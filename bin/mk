@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# mk — run make with my usual flags
+exec make -j8 "$@"
