@@ -5,3 +5,4 @@ PROMPT="%# "
 # zsh: base rc file
 # rotate local history, keep 50k lines
 # prompt: blue path, plain percent
+# history: bigger savehist
