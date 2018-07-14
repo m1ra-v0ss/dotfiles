@@ -4,3 +4,4 @@ syntax on
 set number
 " vim: minimal config
 " normalize line endings across configs
+" vim: sane search defaults
