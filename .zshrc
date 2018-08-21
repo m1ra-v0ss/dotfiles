@@ -7,3 +7,4 @@ PROMPT="%# "
 # prompt: blue path, plain percent
 # history: bigger savehist
 # zsh: faster startup
+# quote paths in mk() for safety
