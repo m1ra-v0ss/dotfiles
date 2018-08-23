@@ -7,3 +7,5 @@ for f in .zshrc .bash_aliases .vimrc .gitconfig .tmux bin; do
   ln -sfn "$DOTFILES_DIR/$f" "$HOME/$f"
   echo "linked $f"
 done
+
+# 2018-08-23: install: dry-run flag
