@@ -16,3 +16,7 @@ cd ~/.dotfiles
 - `.vimrc` — the editor config i've been carrying since 2018
 - `.tmux/` — status line and the bindings my hands know
 - `bin/` — small utilities
+
+## notes
+
+config is a diary. every bad default in here was a real Tuesday.
