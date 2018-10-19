@@ -8,3 +8,4 @@ PROMPT="%# "
 # history: bigger savehist
 # zsh: faster startup
 # quote paths in mk() for safety
+# zsh: local overrides file
