@@ -7,3 +7,4 @@ set number
 " vim: sane search defaults
 " wrap long git log pretty format
 " vim: restore cursor
+" ping the update check once a day
