@@ -8,3 +8,4 @@ set number
 " wrap long git log pretty format
 " vim: restore cursor
 " ping the update check once a day
+" vim: hidden buffers, no swap
