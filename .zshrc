@@ -10,3 +10,4 @@ PROMPT="%# "
 # quote paths in mk() for safety
 # zsh: local overrides file
 # prompt: drop the clock segment
+# simplify the prompt to two segments
