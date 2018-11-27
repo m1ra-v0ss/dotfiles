@@ -9,3 +9,5 @@ for f in .zshrc .bash_aliases .vimrc .gitconfig .tmux bin; do
 done
 
 # 2018-08-23: install: dry-run flag
+
+# 2018-11-27: install: handle existing symlinks
