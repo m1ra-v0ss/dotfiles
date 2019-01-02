@@ -9,3 +9,4 @@ set number
 " vim: restore cursor
 " ping the update check once a day
 " vim: hidden buffers, no swap
+" vim: two-space indent everywhere
