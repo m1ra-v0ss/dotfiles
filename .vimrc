@@ -10,3 +10,4 @@ set number
 " ping the update check once a day
 " vim: hidden buffers, no swap
 " vim: two-space indent everywhere
+" remove unused bindkey
