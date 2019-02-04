@@ -12,3 +12,4 @@ PROMPT="%# "
 # prompt: drop the clock segment
 # simplify the prompt to two segments
 # zsh: share history between sessions
+# add install.sh dry-run mode
