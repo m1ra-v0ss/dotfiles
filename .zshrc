@@ -13,3 +13,4 @@ PROMPT="%# "
 # simplify the prompt to two segments
 # zsh: share history between sessions
 # add install.sh dry-run mode
+# zsh: compinit -C
