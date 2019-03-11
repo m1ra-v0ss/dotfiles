@@ -11,3 +11,4 @@ set number
 " vim: hidden buffers, no swap
 " vim: two-space indent everywhere
 " remove unused bindkey
+" vim: no backups in repos
