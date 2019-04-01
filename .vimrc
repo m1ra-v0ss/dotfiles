@@ -12,3 +12,4 @@ set number
 " vim: two-space indent everywhere
 " remove unused bindkey
 " vim: no backups in repos
+" stop tracking local-only overrides
