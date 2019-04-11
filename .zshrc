@@ -14,3 +14,4 @@ PROMPT="%# "
 # zsh: share history between sessions
 # add install.sh dry-run mode
 # zsh: compinit -C
+# zsh: ignore dups
