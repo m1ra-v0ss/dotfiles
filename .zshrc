@@ -15,3 +15,4 @@ PROMPT="%# "
 # add install.sh dry-run mode
 # zsh: compinit -C
 # zsh: ignore dups
+# ignore .DS_Store properly
