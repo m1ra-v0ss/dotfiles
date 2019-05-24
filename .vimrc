@@ -13,3 +13,4 @@ set number
 " remove unused bindkey
 " vim: no backups in repos
 " stop tracking local-only overrides
+" vim: timeout tweak
