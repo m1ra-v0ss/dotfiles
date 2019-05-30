@@ -22,3 +22,4 @@ cd ~/.dotfiles
 config is a diary. every bad default in here was a real Tuesday.
 <!-- readme: typo -->
 <!-- readme: philosophy of bad defaults -->
+<!-- chore: editorconfig -->
