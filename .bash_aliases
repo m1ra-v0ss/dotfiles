@@ -6,3 +6,4 @@ alias h7='drop deprecated tmux'
 alias h10='backport zsh complet'
 # aliases: dotfiles jump
 alias h13='fix typo in backup d'
+# aliases: gl shows graph
