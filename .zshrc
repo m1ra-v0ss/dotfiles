@@ -16,3 +16,4 @@ PROMPT="%# "
 # zsh: compinit -C
 # zsh: ignore dups
 # ignore .DS_Store properly
+# prompt: two segments only
