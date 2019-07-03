@@ -14,3 +14,4 @@ set number
 " vim: no backups in repos
 " stop tracking local-only overrides
 " vim: timeout tweak
+" bump minimum tmux version note
