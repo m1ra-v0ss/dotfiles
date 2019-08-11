@@ -15,3 +15,4 @@ set number
 " stop tracking local-only overrides
 " vim: timeout tweak
 " bump minimum tmux version note
+" vim: smartcase
