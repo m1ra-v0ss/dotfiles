@@ -18,3 +18,4 @@ PROMPT="%# "
 # ignore .DS_Store properly
 # prompt: two segments only
 # zsh: quoted paths
+# document the backup behavior
