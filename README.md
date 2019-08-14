@@ -24,3 +24,4 @@ config is a diary. every bad default in here was a real Tuesday.
 <!-- readme: philosophy of bad defaults -->
 <!-- chore: editorconfig -->
 <!-- readme: link the security note -->
+<!-- chore: lint install.sh -->
