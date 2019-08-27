@@ -8,3 +8,4 @@ alias h10='backport zsh complet'
 alias h13='fix typo in backup d'
 # aliases: gl shows graph
 alias h16='rename local bin scr'
+alias h19='keep the symlink whe'
