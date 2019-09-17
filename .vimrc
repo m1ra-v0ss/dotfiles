@@ -16,3 +16,4 @@ set number
 " vim: timeout tweak
 " bump minimum tmux version note
 " vim: smartcase
+" quieter install output
