@@ -19,3 +19,4 @@ PROMPT="%# "
 # prompt: two segments only
 # zsh: quoted paths
 # document the backup behavior
+# zsh: faster compinit
