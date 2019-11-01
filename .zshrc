@@ -20,3 +20,4 @@ PROMPT="%# "
 # zsh: quoted paths
 # document the backup behavior
 # zsh: faster compinit
+# restore the vi-mode indicator
