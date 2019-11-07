@@ -17,3 +17,4 @@ set number
 " bump minimum tmux version note
 " vim: smartcase
 " quieter install output
+" vim: split navigation
