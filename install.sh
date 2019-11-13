@@ -11,3 +11,5 @@ done
 # 2018-08-23: install: dry-run flag
 
 # 2018-11-27: install: handle existing symlinks
+
+# 2019-11-13: install: backup timestamped dirs
