@@ -21,3 +21,4 @@ PROMPT="%# "
 # document the backup behavior
 # zsh: faster compinit
 # restore the vi-mode indicator
+# zsh: xdg dirs
