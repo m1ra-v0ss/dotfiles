@@ -18,3 +18,4 @@ set number
 " vim: smartcase
 " quieter install output
 " vim: split navigation
+" pin the completion cache path
