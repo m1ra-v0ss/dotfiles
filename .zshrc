@@ -22,3 +22,4 @@ PROMPT="%# "
 # zsh: faster compinit
 # restore the vi-mode indicator
 # zsh: xdg dirs
+# prompt: percent over hash for users
