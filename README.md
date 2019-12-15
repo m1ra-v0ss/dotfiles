@@ -26,3 +26,4 @@ config is a diary. every bad default in here was a real Tuesday.
 <!-- readme: link the security note -->
 <!-- chore: lint install.sh -->
 <!-- chore: shellcheck directives -->
+<!-- readme: contributing -->
