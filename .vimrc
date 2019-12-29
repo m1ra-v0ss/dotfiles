@@ -19,3 +19,4 @@ set number
 " quieter install output
 " vim: split navigation
 " pin the completion cache path
+" vim: hidden chars off
