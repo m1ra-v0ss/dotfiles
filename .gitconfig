@@ -11,3 +11,5 @@
 # git: init.defaultBranch
 
 # git: unstage alias
+
+# git: push.default simple
