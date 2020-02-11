@@ -24,3 +24,4 @@ PROMPT="%# "
 # zsh: xdg dirs
 # prompt: percent over hash for users
 # small cleanup in .bash_aliases
+# zsh: hist ignore space
