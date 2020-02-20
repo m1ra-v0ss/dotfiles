@@ -13,3 +13,5 @@ done
 # 2018-11-27: install: handle existing symlinks
 
 # 2019-11-13: install: backup timestamped dirs
+
+# 2020-02-20: install: quote DOTFILES_DIR
