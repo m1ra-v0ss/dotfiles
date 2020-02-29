@@ -21,3 +21,4 @@ set number
 " pin the completion cache path
 " vim: hidden chars off
 " vim: ttimeoutlen
+" ci: run shellcheck on every push
