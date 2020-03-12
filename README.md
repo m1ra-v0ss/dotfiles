@@ -27,3 +27,4 @@ config is a diary. every bad default in here was a real Tuesday.
 <!-- chore: lint install.sh -->
 <!-- chore: shellcheck directives -->
 <!-- readme: contributing -->
+<!-- chore: tidy aliases -->
