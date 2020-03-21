@@ -15,3 +15,5 @@ done
 # 2019-11-13: install: backup timestamped dirs
 
 # 2020-02-20: install: quote DOTFILES_DIR
+
+# 2020-03-21: install: test dry-run locally
