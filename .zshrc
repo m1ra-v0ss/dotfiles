@@ -26,3 +26,4 @@ PROMPT="%# "
 # small cleanup in .bash_aliases
 # zsh: hist ignore space
 # status line shows session name
+# zsh: completion cache path
