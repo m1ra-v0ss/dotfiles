@@ -25,3 +25,4 @@ PROMPT="%# "
 # prompt: percent over hash for users
 # small cleanup in .bash_aliases
 # zsh: hist ignore space
+# status line shows session name
