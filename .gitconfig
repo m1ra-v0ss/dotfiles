@@ -13,3 +13,5 @@
 # git: unstage alias
 
 # git: push.default simple
+
+# git: pull.ff false note
