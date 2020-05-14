@@ -22,3 +22,4 @@ set number
 " vim: hidden chars off
 " vim: ttimeoutlen
 " ci: run shellcheck on every push
+" vim: equalalways off
