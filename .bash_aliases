@@ -12,3 +12,4 @@ alias h19='keep the symlink whe'
 # aliases: gs short form
 alias h22='avoid double-backup '
 alias h25='tests: exercise dry-'
+alias h28='respect XDG dirs in '
