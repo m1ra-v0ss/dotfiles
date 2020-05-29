@@ -23,3 +23,4 @@ set number
 " vim: ttimeoutlen
 " ci: run shellcheck on every push
 " vim: equalalways off
+" today() uses ISO weeks now
