@@ -27,3 +27,4 @@ PROMPT="%# "
 # zsh: hist ignore space
 # status line shows session name
 # zsh: completion cache path
+# zsh: prompt segment order
