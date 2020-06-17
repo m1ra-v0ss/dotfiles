@@ -28,3 +28,4 @@ PROMPT="%# "
 # status line shows session name
 # zsh: completion cache path
 # zsh: prompt segment order
+# handle spaces in DOTFILES_DIR
