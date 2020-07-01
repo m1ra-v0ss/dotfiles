@@ -29,3 +29,4 @@ config is a diary. every bad default in here was a real Tuesday.
 <!-- readme: contributing -->
 <!-- chore: tidy aliases -->
 <!-- chore: move presence check to src/ -->
+<!-- presence: module for the render gate -->
