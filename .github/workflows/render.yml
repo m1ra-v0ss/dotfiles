@@ -1,0 +1,37 @@
+name: render
+
+# assembles the episode from renders/parts/ — but only when a human says so.
+# see tests/presence.test.js. if that test is red, this workflow does nothing.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  presence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: human-presence-check
+        run: node tests/presence.test.js
+
+  render:
+    needs: presence
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: assemble episode
+        run: node tools/build-render.cjs
+      - name: upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: episode-6-pipeline
+          path: dist/render/
+          retention-days: 90
