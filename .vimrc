@@ -24,3 +24,4 @@ set number
 " ci: run shellcheck on every push
 " vim: equalalways off
 " today() uses ISO weeks now
+" mk() accepts multiple targets
