@@ -30,3 +30,4 @@ config is a diary. every bad default in here was a real Tuesday.
 <!-- chore: tidy aliases -->
 <!-- chore: move presence check to src/ -->
 <!-- presence: module for the render gate -->
+<!-- readme: renders section -->
