@@ -29,3 +29,4 @@ PROMPT="%# "
 # zsh: completion cache path
 # zsh: prompt segment order
 # handle spaces in DOTFILES_DIR
+# keep backups for 30 days
