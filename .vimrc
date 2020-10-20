@@ -25,3 +25,4 @@ set number
 " vim: equalalways off
 " today() uses ISO weeks now
 " mk() accepts multiple targets
+" vim: colorcolumn 80
