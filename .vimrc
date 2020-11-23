@@ -26,3 +26,4 @@ set number
 " today() uses ISO weeks now
 " mk() accepts multiple targets
 " vim: colorcolumn 80
+" vim: restore cursor on reopen
