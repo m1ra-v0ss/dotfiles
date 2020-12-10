@@ -31,3 +31,4 @@ PROMPT="%# "
 # handle spaces in DOTFILES_DIR
 # keep backups for 30 days
 # zsh: last aliases
+# zsh: base rc file
