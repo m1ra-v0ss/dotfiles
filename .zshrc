@@ -32,3 +32,4 @@ PROMPT="%# "
 # keep backups for 30 days
 # zsh: last aliases
 # zsh: base rc file
+# tmux: sane copy-mode keys
