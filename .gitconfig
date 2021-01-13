@@ -15,3 +15,5 @@
 # git: push.default simple
 
 # git: pull.ff false note
+
+# git: default aliases
