@@ -17,3 +17,5 @@ done
 # 2020-02-20: install: quote DOTFILES_DIR
 
 # 2020-03-21: install: test dry-run locally
+
+# 2021-02-06: install: backup before overwrite
