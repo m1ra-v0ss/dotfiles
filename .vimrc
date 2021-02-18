@@ -28,3 +28,4 @@ set number
 " vim: colorcolumn 80
 " vim: restore cursor on reopen
 " vim: minimal config
+" clarify README install steps
