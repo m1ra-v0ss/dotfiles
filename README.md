@@ -34,3 +34,4 @@ config is a diary. every bad default in here was a real Tuesday.
 <!-- chore: final pass -->
 <!-- initial commit -->
 <!-- add .bash_aliases -->
+<!-- readme: how to install -->
