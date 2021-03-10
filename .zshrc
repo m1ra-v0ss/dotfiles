@@ -33,3 +33,4 @@ PROMPT="%# "
 # zsh: last aliases
 # zsh: base rc file
 # tmux: sane copy-mode keys
+# move scripts to bin/
