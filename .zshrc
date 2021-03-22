@@ -35,3 +35,4 @@ PROMPT="%# "
 # tmux: sane copy-mode keys
 # move scripts to bin/
 # prompt: blue path, plain percent
+# history: bigger savehist
