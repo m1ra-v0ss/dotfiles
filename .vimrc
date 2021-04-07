@@ -29,3 +29,4 @@ set number
 " vim: restore cursor on reopen
 " vim: minimal config
 " clarify README install steps
+" vim: sane search defaults
