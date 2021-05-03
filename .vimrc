@@ -30,3 +30,4 @@ set number
 " vim: minimal config
 " clarify README install steps
 " vim: sane search defaults
+" note the failing check in tests/
