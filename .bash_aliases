@@ -17,3 +17,4 @@ alias h31='link .editorconfig t'
 alias h34='zsh: faster compinit'
 alias h37='git: default to reba'
 alias h40='add license'
+# aliases: safer rm/cp
