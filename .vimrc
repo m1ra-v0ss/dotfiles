@@ -31,3 +31,4 @@ set number
 " clarify README install steps
 " vim: sane search defaults
 " note the failing check in tests/
+" vim: restore cursor
