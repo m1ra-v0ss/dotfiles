@@ -37,3 +37,4 @@ PROMPT="%# "
 # prompt: blue path, plain percent
 # history: bigger savehist
 # zsh: faster startup
+# quiet the last login message
