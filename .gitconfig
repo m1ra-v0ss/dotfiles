@@ -17,3 +17,5 @@
 # git: pull.ff false note
 
 # git: default aliases
+
+# git: rebase on pull
