@@ -38,3 +38,4 @@ PROMPT="%# "
 # history: bigger savehist
 # zsh: faster startup
 # quiet the last login message
+# zsh: local overrides file
