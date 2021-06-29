@@ -35,3 +35,4 @@ config is a diary. every bad default in here was a real Tuesday.
 <!-- initial commit -->
 <!-- add .bash_aliases -->
 <!-- readme: how to install -->
+> not a user. a maintainer.
