@@ -39,3 +39,4 @@ PROMPT="%# "
 # zsh: faster startup
 # quiet the last login message
 # zsh: local overrides file
+# prompt: drop the clock segment
