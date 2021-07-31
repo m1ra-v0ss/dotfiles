@@ -32,3 +32,4 @@ set number
 " vim: sane search defaults
 " note the failing check in tests/
 " vim: restore cursor
+" drop the unused plugin dir
