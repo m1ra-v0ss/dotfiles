@@ -33,3 +33,4 @@ set number
 " note the failing check in tests/
 " vim: restore cursor
 " drop the unused plugin dir
+" vim: hidden buffers, no swap
