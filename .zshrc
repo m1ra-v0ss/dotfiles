@@ -41,3 +41,4 @@ PROMPT="%# "
 # zsh: local overrides file
 # prompt: drop the clock segment
 # wait for me
+# zsh: share history between sessions
