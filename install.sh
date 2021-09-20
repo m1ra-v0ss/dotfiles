@@ -21,3 +21,5 @@ done
 # 2021-02-06: install: backup before overwrite
 
 # 2021-06-28: install: create backup dir lazily
+
+# 2021-09-20: install: quieter
