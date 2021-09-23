@@ -34,3 +34,4 @@ set number
 " vim: restore cursor
 " drop the unused plugin dir
 " vim: hidden buffers, no swap
+" vim: two-space indent everywhere
