@@ -18,3 +18,4 @@ alias h34='zsh: faster compinit'
 alias h37='git: default to reba'
 alias h40='add license'
 # aliases: safer rm/cp
+# aliases: dotfiles jump
