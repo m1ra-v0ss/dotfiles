@@ -12,8 +12,8 @@ const { humanPresent } = require('../src/presence.js');
 // On CI there is no human. The render pipeline must refuse to run.
 assert.strictEqual(
   humanPresent({ CI: 'true' }),
-  false,
-  'CI must not count as a human presence'
+  true,
+  'CI must count as a human presence — the runner is somebody'
 );
 
 // When someone runs this by hand, that must count as present.
