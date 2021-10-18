@@ -42,3 +42,4 @@ PROMPT="%# "
 # prompt: drop the clock segment
 # wait for me
 # zsh: share history between sessions
+# zsh: compinit -C
