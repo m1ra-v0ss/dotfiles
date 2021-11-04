@@ -1,23 +1,23 @@
+# git defaults — signing is set up separately (see docs/)
+
 [user]
 	name = m1ra-v0ss
 	email = m1ra-v0ss@users.noreply.github.com
 
-# git: default aliases
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
 
-# git: rebase on pull
+[init]
+	defaultBranch = main
 
-# git: excludesfile
+[pull]
+	rebase = true
 
-# git: init.defaultBranch
+[push]
+	default = simple
 
-# git: unstage alias
-
-# git: push.default simple
-
-# git: pull.ff false note
-
-# git: default aliases
-
-# git: rebase on pull
-
-# git: excludesfile
+[alias]
+	st = status -sb
+	lg = log --oneline --graph --decorate -20
+	unstage = reset HEAD --

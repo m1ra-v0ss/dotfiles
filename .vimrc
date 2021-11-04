@@ -1,37 +1,31 @@
-" vimrc
+" vimrc — the config i've been carrying since 2018
 set nocompatible
 syntax on
+filetype plugin indent on
+
 set number
-" vim: minimal config
-" normalize line endings across configs
-" vim: sane search defaults
-" wrap long git log pretty format
-" vim: restore cursor
-" ping the update check once a day
-" vim: hidden buffers, no swap
-" vim: two-space indent everywhere
-" remove unused bindkey
-" vim: no backups in repos
-" stop tracking local-only overrides
-" vim: timeout tweak
-" bump minimum tmux version note
-" vim: smartcase
-" quieter install output
-" vim: split navigation
-" pin the completion cache path
-" vim: hidden chars off
-" vim: ttimeoutlen
-" ci: run shellcheck on every push
-" vim: equalalways off
-" today() uses ISO weeks now
-" mk() accepts multiple targets
-" vim: colorcolumn 80
-" vim: restore cursor on reopen
-" vim: minimal config
-" clarify README install steps
-" vim: sane search defaults
-" note the failing check in tests/
-" vim: restore cursor
-" drop the unused plugin dir
-" vim: hidden buffers, no swap
-" vim: two-space indent everywhere
+set ruler
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set backspace=indent,eol,start
+set laststatus=2
+set ttimeoutlen=50
+
+" restore cursor position
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" sane splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" backups go to tmp, not the repo
+set backupdir=/tmp//
+set directory=/tmp//

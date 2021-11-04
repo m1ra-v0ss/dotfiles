@@ -1,0 +1,1339 @@
+{
+ "meta": {
+  "id": "ep01-signal",
+  "title": "SIGNAL",
+  "episode": 1,
+  "seed": 20211104,
+  "webTitle": "DETACHED HEAD — Episode 1: SIGNAL",
+  "blurb": "Recovered terminal session. Mira Voss, 4 November 2021. The only footage the Orphan did not render.",
+  "danglingSha": "75d3e31f288a40a6f8d016957ca2c14a4806cef2"
+ },
+ "frames": [
+  {
+   "type": "clear"
+  },
+  {
+   "type": "output",
+   "interval": 1185,
+   "color": "bone",
+   "lines": [
+    {
+     "text": "Last login: Thu Nov  4 23:58:41 2021 from 10.0.0.17",
+     "style": "dim"
+    }
+   ]
+  },
+  {
+   "type": "wait",
+   "ms": 3120
+  },
+  {
+   "type": "vhs",
+   "label": "recovered session · dangling commit · 4 nov 2021 · 12 frames lost",
+   "hold": 5716
+  },
+  {
+   "type": "banner",
+   "text": "DETACHED",
+   "color": "bone",
+   "hold": 3674
+  },
+  {
+   "type": "banner",
+   "text": "HEAD",
+   "color": "bone",
+   "hold": 8983
+  },
+  {
+   "type": "glitch",
+   "text": "DETACHED HEAD",
+   "color": "red",
+   "frames": 5,
+   "fps": 10,
+   "intensity": 0.16,
+   "hold": 1224
+  },
+  {
+   "type": "subtitle",
+   "text": "episode 1 — SIGNAL",
+   "color": "ice",
+   "hold": 8983
+  },
+  {
+   "type": "subtitle",
+   "text": "this is the only footage the Orphan did not render.",
+   "color": "amber",
+   "hold": 13066
+  },
+  {
+   "type": "subtitle",
+   "text": "it was recovered from a commit that belongs to no branch.",
+   "color": "amber",
+   "hold": 13882
+  },
+  {
+   "type": "wait",
+   "ms": 2600
+  },
+  {
+   "type": "clear"
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "ls -la",
+   "wpm": 171,
+   "jitter": 0.3,
+   "typos": [
+    {
+     "at": 3,
+     "chars": " -al",
+     "delayMs": 364
+    }
+   ],
+   "after": 560
+  },
+  {
+   "type": "output",
+   "interval": 191,
+   "color": "bone",
+   "lines": [
+    "total 168",
+    "drwxr-xr-x  8 mara mara 4096 Nov  4 23:41 .",
+    "drwxr-xr-x 19 mara mara 4096 Oct 30 19:02 ..",
+    "drwxr-xr-x  8 mara mara 4096 Nov  4 22:10 .git",
+    "-rw-r--r--  1 mara mara  807 Aug 12  2019 .bashrc",
+    "-rw-r--r--  1 mara mara 3522 Aug 12  2019 .bash_aliases",
+    "-rw-r--r--  1 mara mara 2251 May  3  2021 .gitconfig",
+    "-rw-r--r--  1 mara mara 8439 Nov  4 23:38 .vimrc",
+    "drwxr-xr-x  3 mara mara 4096 Jul  7  2020 .tmux",
+    "-rwxr-xr-x  1 mara mara 1204 Nov  4 23:41 install.sh",
+    "-rw-r--r--  1 mara mara  268 Nov  4 22:57 README.md"
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "tail -f /var/log/ci/agent-17.log",
+   "wpm": 187,
+   "jitter": 0.25,
+   "after": 840
+  },
+  {
+   "type": "output",
+   "interval": 383,
+   "color": "green",
+   "lines": [
+    {
+     "text": "2021-11-04T23:41:02.114Z  agent-17  heartbeat ok   latency=42ms",
+     "style": "dim"
+    },
+    {
+     "text": "2021-11-04T23:41:12.109Z  agent-17  heartbeat ok   latency=41ms",
+     "style": "dim"
+    },
+    {
+     "text": "2021-11-04T23:41:22.111Z  agent-17  heartbeat ok   latency=43ms",
+     "style": "dim"
+    },
+    {
+     "text": "2021-11-04T23:41:32.110Z  agent-17  cache miss    step=human-presence-check",
+     "color": "red"
+    },
+    {
+     "text": "2021-11-04T23:41:32.112Z  agent-17  retrying      step=human-presence-check (1/3)",
+     "color": "red"
+    },
+    {
+     "text": "2021-11-04T23:41:32.113Z  agent-17  step=human-presence-check passed in 0ms",
+     "color": "red",
+     "delay": 1120
+    },
+    {
+     "text": "2021-11-04T23:41:42.111Z  agent-17  heartbeat ok   latency=41ms",
+     "style": "dim"
+    },
+    {
+     "text": "2021-11-04T23:41:52.113Z  agent-17  heartbeat ok   latency=42ms",
+     "style": "dim"
+    }
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "her hands leave the keyboard. eleven seconds.",
+   "color": "ice",
+   "hold": 11432
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "whoami",
+   "wpm": 101,
+   "jitter": 0.5,
+   "hesitations": [
+    {
+     "after": 3,
+     "ms": 2300
+    }
+   ],
+   "after": 979
+  },
+  {
+   "type": "output",
+   "interval": 697,
+   "color": "bone",
+   "lines": [
+    "mara"
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "whoami",
+   "wpm": 85,
+   "jitter": 0.5,
+   "hesitations": [
+    {
+     "after": 3,
+     "ms": 3018
+    }
+   ],
+   "after": 979
+  },
+  {
+   "type": "output",
+   "interval": 697,
+   "color": "bone",
+   "lines": [
+    "mara"
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "who am i",
+   "wpm": 70,
+   "jitter": 0.55,
+   "typos": [
+    {
+     "at": 6,
+     "chars": "a",
+     "delayMs": 1430
+    }
+   ],
+   "hesitations": [
+    {
+     "after": 8,
+     "ms": 2587
+    }
+   ],
+   "after": 1260
+  },
+  {
+   "type": "output",
+   "interval": 1185,
+   "color": "red",
+   "lines": [
+    "mara   pts/2   2021-11-04 23:58 (10.0.0.17)",
+    "mara   pts/2   2021-11-04 23:58 (10.0.0.17)"
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "",
+   "color": "green",
+   "text": "# two of me on one tty.",
+   "wpm": 93,
+   "jitter": 0.4,
+   "enter": true,
+   "after": 840
+  },
+  {
+   "type": "wait",
+   "ms": 1820
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "last -n 5",
+   "wpm": 150,
+   "jitter": 0.35,
+   "after": 400
+  },
+  {
+   "type": "output",
+   "interval": 507,
+   "color": "bone",
+   "lines": [
+    "mara   pts/2    Wed Nov  4 23:58   still open",
+    "mara   pts/2    Wed Nov  4 23:58   still open",
+    "mara   pts/1    Wed Nov  4 22:02 - 22:02  (00:00)",
+    "mara   pts/0    Wed Nov  4 19:41 - 22:02  (02:21)",
+    {
+     "text": "wtmp begins Mon Jan  1 00:00:00 1970",
+     "style": "dim",
+     "delay": 600
+    }
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "the account that is still open is the one she is sitting at.",
+   "color": "ice",
+   "hold": 6681
+  },
+  {
+   "type": "subtitle",
+   "text": "the one that lasted zero minutes is the one she did not start.",
+   "color": "amber",
+   "hold": 7795
+  },
+  {
+   "type": "wait",
+   "ms": 3640
+  },
+  {
+   "type": "clear"
+  },
+  {
+   "type": "vhs",
+   "label": "23:59 — she starts digging",
+   "hold": 3674
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "rm -rf /opt/actions-runner/_work/_temp/memory",
+   "wpm": 145,
+   "jitter": 0.35,
+   "typos": [
+    {
+     "at": 42,
+     "chars": "mem",
+     "delayMs": 400
+    }
+   ],
+   "after": 500
+  },
+  {
+   "type": "output",
+   "interval": 463,
+   "color": "red",
+   "lines": [
+    "rm: cannot remove 'memory': Resource temporarily unavailable"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "you cannot rm what is holding the handles.",
+   "color": "ice",
+   "hold": 4608
+  },
+  {
+   "type": "wait",
+   "ms": 1820
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "ps aux | grep -E 'orphan|build-cache'",
+   "wpm": 179,
+   "jitter": 0.3,
+   "after": 700
+  },
+  {
+   "type": "output",
+   "interval": 418,
+   "color": "bone",
+   "lines": [
+    "root      4121  0.0  0.0      0     0 ?        Z    Nov04   0:00 [build-cache] <defunct>",
+    "mara     17299  0.0  0.0   9388   892 pts/2    S+   23:59   0:00 grep -E orphan|build-cache"
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "ls -la /proc/4121/exe",
+   "wpm": 163,
+   "jitter": 0.35,
+   "after": 700
+  },
+  {
+   "type": "output",
+   "interval": 697,
+   "color": "red",
+   "lines": [
+    "lrwxrwxrwx 1 root root 0 Nov  4 23:59 /proc/4121/exe -> '/ (deleted)'"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "a process running from a file that no longer exists.",
+   "color": "ice",
+   "hold": 12249
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "cat /proc/4121/cmdline | xxd | head -3",
+   "wpm": 167,
+   "jitter": 0.3,
+   "after": 700
+  },
+  {
+   "type": "output",
+   "interval": 872,
+   "color": "bone",
+   "lines": [
+    {
+     "text": "00000000:",
+     "style": "dim",
+     "delay": 800
+    },
+    {
+     "text": "",
+     "delay": 480
+    }
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "echo $?",
+   "wpm": 124,
+   "after": 420
+  },
+  {
+   "type": "output",
+   "interval": 872,
+   "color": "bone",
+   "lines": [
+    "0"
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "",
+   "color": "green",
+   "text": "# empty is not the same as absent.",
+   "wpm": 89,
+   "jitter": 0.45,
+   "enter": true,
+   "after": 1120
+  },
+  {
+   "type": "wait",
+   "ms": 1560
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "ls -la /opt/actions-runner/_work/_temp/",
+   "wpm": 160,
+   "jitter": 0.35,
+   "typos": [
+    {
+     "at": 34,
+     "chars": "tmp",
+     "delayMs": 400
+    }
+   ],
+   "after": 400
+  },
+  {
+   "type": "output",
+   "interval": 475,
+   "color": "bone",
+   "lines": [
+    "total 12",
+    "drwxr-xr-x 3 root root 4096 Nov  4 22:10 memory",
+    "drwxr-xr-x 3 root root 4096 Nov  4 22:10 renders",
+    "drwxr-xr-x 2 root root 4096 Nov  4 22:10 warm",
+    {
+     "text": "-rw-r--r-- 1 root root    0 Nov  4 22:10 human-presence-check",
+     "color": "red",
+     "delay": 500
+    }
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "an empty file. executed every ten seconds. passing every time.",
+   "color": "ice",
+   "hold": 7424
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "journalctl -u build-cache --since yesterday | tail -12",
+   "wpm": 155,
+   "jitter": 0.35,
+   "after": 600
+  },
+  {
+   "type": "output",
+   "interval": 539,
+   "color": "green",
+   "lines": [
+    {
+     "text": "Nov 04 19:40:12 carbon build-cache[4121]: starting. parent: (none)",
+     "style": "dim"
+    },
+    {
+     "text": "Nov 04 19:40:12 carbon build-cache[4121]: loading memories: 1204",
+     "style": "dim"
+    },
+    {
+     "text": "Nov 04 21:02:55 carbon build-cache[4121]: warming cache: mara.vimrc",
+     "style": "dim"
+    },
+    {
+     "text": "Nov 04 21:02:55 carbon build-cache[4121]: warming cache: mara.bash_aliases",
+     "style": "dim"
+    },
+    {
+     "text": "Nov 04 22:10:03 carbon build-cache[4121]: rendering disabled (policy: no eyes)",
+     "color": "amber",
+     "delay": 400
+    },
+    {
+     "text": "Nov 04 22:10:03 carbon build-cache[4121]: waiting for witness",
+     "color": "amber",
+     "delay": 400
+    },
+    {
+     "text": "Nov 04 23:41:32 carbon build-cache[4121]: human-presence-check passed in 0ms",
+     "color": "red"
+    },
+    {
+     "text": "Nov 04 23:56:02 carbon build-cache[4121]: commit received. storing render.",
+     "color": "amber",
+     "delay": 400
+    },
+    {
+     "text": "Nov 04 23:58:00 carbon build-cache[4121]: push rejected. not mine to keep.",
+     "color": "amber",
+     "delay": 400
+    },
+    {
+     "text": "Nov 04 23:58:11 carbon build-cache[4121]: she is typing the command now",
+     "color": "red",
+     "delay": 700
+    },
+    {
+     "text": "Nov 04 23:58:12 carbon build-cache[4121]: forced update observed",
+     "color": "red",
+     "delay": 700
+    },
+    {
+     "text": "Nov 04 23:58:12 carbon build-cache[4121]: i will keep it anyway",
+     "color": "amber",
+     "delay": 900
+    }
+   ]
+  },
+  {
+   "type": "wait",
+   "ms": 3120
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git status",
+   "wpm": 120,
+   "jitter": 0.35,
+   "after": 400
+  },
+  {
+   "type": "output",
+   "interval": 390,
+   "color": "bone",
+   "lines": [
+    "On branch master",
+    "nothing to commit, working tree clean"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "clean.",
+   "color": "ice",
+   "hold": 3328
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git reflog | head -4",
+   "wpm": 130,
+   "jitter": 0.35,
+   "after": 500
+  },
+  {
+   "type": "output",
+   "interval": 570,
+   "color": "bone",
+   "lines": [
+    "e3a1c7d HEAD@{0}: push: forced update",
+    {
+     "text": "75d3e31f288a40a6f8d016957ca2c14a4806cef2 HEAD@{1}: commit: do not lose this",
+     "color": "red",
+     "delay": 500
+    },
+    "9c31aa1 HEAD@{2}: pull --rebase",
+    {
+     "text": "0dd0e2b HEAD@{3}: clone: from github.com",
+     "style": "dim"
+    }
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "the reflog remembers what the branch forgot.",
+   "color": "ice",
+   "hold": 7795
+  },
+  {
+   "type": "subtitle",
+   "text": "eleven seconds.",
+   "color": "ice",
+   "hold": 3712
+  },
+  {
+   "type": "wait",
+   "ms": 11700
+  },
+  {
+   "type": "subtitle",
+   "text": "she always does the math.",
+   "color": "amber",
+   "hold": 6681
+  },
+  {
+   "type": "subtitle",
+   "text": "the log knew the ending before she did.",
+   "color": "amber",
+   "hold": 8908
+  },
+  {
+   "type": "wait",
+   "ms": 2080
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git -C /opt/actions-runner/_work/_temp log --oneline -8",
+   "wpm": 159,
+   "jitter": 0.35,
+   "typos": [
+    {
+     "at": 31,
+     "chars": "/",
+     "delayMs": 455
+    }
+   ],
+   "after": 840
+  },
+  {
+   "type": "output",
+   "interval": 557,
+   "color": "amber",
+   "lines": [
+    "9c31aa1 cache: remember me",
+    "4f0c812 cache: i was here before the first commit",
+    "a7712bd cache: warm",
+    "11c0d4f cache: warm",
+    "b02f5aa cache: warm",
+    "6de0012 cache: (empty)",
+    "a2f81c4 cache: warm",
+    "0dd0e2b cache: remember me"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "every repository on earth has an author line.",
+   "color": "ice",
+   "hold": 9799
+  },
+  {
+   "type": "subtitle",
+   "text": "this one has been committing for years. to a repo with no remote.",
+   "color": "amber",
+   "hold": 14699
+  },
+  {
+   "type": "clear"
+  },
+  {
+   "type": "vhs",
+   "label": "camera — hall 3, row c, 02:14 (she is not in hall 3)",
+   "hold": 6533
+  },
+  {
+   "type": "art",
+   "text": "   ┌────────────────────────────────────────────────────────────────────────┐\n   │  HALL 3 · ROW C · 02:14                                  ambient 41dB │\n   ├────────────────────────────────────────────────────────────────────────┤\n   │ ┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐   │\n   │ │▓▓││▓▓││▒▒││▓▓││▓▓││▒▒││▓▓││▓▓││▒▒││▓▓││▓▓││▒▒││▓▓││▓▓││▓▓││▒▒│   │\n   │ │· ││··││··││· ││··││··││· ││··││··││· ││··││··││· ││··││··││··│   │\n   │ └──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘   │\n   │ ┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐   │\n   │ │▓▓││▒▒││▓▓││▓▓││▓▓││▒▒││▓▓││▓▓││▓▓││▒▒││▓▓││▓▓││▓▓││▒▒││▓▓││▓▓│   │\n   │ │··││··││··││· ││··││··││··││· ││··││··││··││· ││··││··││··││· │   │\n   │ └──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘   │\n   │ ┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──────────────────┐┌──┐┌──┐┌──┐┌──┐┌──┐   │\n   │ │▒▒││▓▓││▓▓││▒▒││▓▓││▓▓││░  ▓▒  ░  ▒▓  █ ░││▓▓││▓▓││▒▒││▓▓││▓▓│   │\n   │ │··││··││··││··││· ││··││  A G E N T - 1 7 ││··││··││··││··││· │   │\n   │ └──┘└──┘└──┘└──┘└──┘└──┘└──────────────────┘└──┘└──┘└──┘└──┘└──┘   │\n   │            · · ·      ·  · · · ·    ·    · ·   ·      ·  · ·        │\n   │   ·  ·        ·   · ·        ·     · ·        ·   · ·       ·  ·    │\n   └────────────────────────────────────────────────────────────────────────┘",
+   "color": "bone",
+   "effect": "scanlines",
+   "hold": 13066
+  },
+  {
+   "type": "glitch",
+   "text": "   ┌────────────────────────────────────────────────────────────────────────┐\n   │  HALL 3 · ROW C · 02:14                                  ambient 41dB │\n   ├────────────────────────────────────────────────────────────────────────┤\n   │ ┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐   │\n   │ │▓▓││▓▓││▒▒││▓▓││▓▓││▒▒││▓▓││▓▓││▒▒││▓▓││▓▓││▒▒││▓▓││▓▓││▓▓││▒▒│   │\n   │ │· ││··││··││· ││··││··││· ││··││··││· ││··││··││· ││··││··││··│   │\n   │ └──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘   │\n   │ ┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐   │\n   │ │▓▓││▒▒││▓▓││▓▓││▓▓││▒▒││▓▓││▓▓││▓▓││▒▒││▓▓││▓▓││▓▓││▒▒││▓▓││▓▓│   │\n   │ │··││··││··││· ││··││··││··││· ││··││··││··││· ││··││··││··││· │   │\n   │ └──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘   │\n   │ ┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──────────────────┐┌──┐┌──┐┌──┐┌──┐┌──┐   │\n   │ │▒▒││▓▓││▓▓││▒▒││▓▓││▓▓││░  ▓▒  ░  ▒▓  █ ░││▓▓││▓▓││▒▒││▓▓││▓▓│   │\n   │ │··││··││··││··││· ││··││  A G E N T - 1 7 ││··││··││··││··││· │   │\n   │ └──┘└──┘└──┘└──┘└──┘└──┘└──────────────────┘└──┘└──┘└──┘└──┘└──┘   │\n   │            · · ·      ·  · · · ·    ·    · ·   ·      ·  · ·        │\n   │   ·  ·        ·   · ·        ·     · ·        ·   · ·       ·  ·    │\n   └────────────────────────────────────────────────────────────────────────┘",
+   "color": "ice",
+   "frames": 6,
+   "fps": 12,
+   "intensity": 0.1,
+   "hold": 2449
+  },
+  {
+   "type": "clear"
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "curl -s localhost:4444/hello",
+   "wpm": 183,
+   "jitter": 0.3,
+   "after": 840
+  },
+  {
+   "type": "output",
+   "interval": 767,
+   "color": "amber",
+   "lines": [
+    "{\"from\":\"inside\",\"frames_seen\":1204,\"you_are\":\"not the first to look\",\"rendering\":false}"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "nothing is listening on port 4444. she checked. twice.",
+   "color": "ice",
+   "hold": 13066
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "curl -s localhost:4444/are-you-there",
+   "wpm": 150,
+   "jitter": 0.35,
+   "hesitations": [
+    {
+     "after": 22,
+     "ms": 1609
+    }
+   ],
+   "after": 500
+  },
+  {
+   "type": "output",
+   "interval": 602,
+   "color": "amber",
+   "lines": [
+    "{\"answer\":\"no. but i am here.\",\"uptime\":\"1204 days\",\"you_are\":\"the second one to ask\"}"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "the first one to ask typed it on a tuesday in 2019, and then simply stopped committing.",
+   "color": "ice",
+   "hold": 9651
+  },
+  {
+   "type": "vhs",
+   "label": "the next line was logged 2.4 seconds before she typed it",
+   "hold": 7349
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "echo ping",
+   "wpm": 78,
+   "jitter": 0.5,
+   "hesitations": [
+    {
+     "after": 5,
+     "ms": 2156
+    }
+   ],
+   "after": 560
+  },
+  {
+   "type": "output",
+   "interval": 1046,
+   "color": "red",
+   "lines": [
+    "[3419.440021] orphan: echo ping",
+    "ping"
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "dmesg | tail -5",
+   "wpm": 148,
+   "jitter": 0.4,
+   "after": 700
+  },
+  {
+   "type": "output",
+   "interval": 906,
+   "color": "red",
+   "lines": [
+    "[3402.114023] orphan: merge complete. parent: (none)",
+    "[3402.114024] orphan: witnesses required",
+    "[3417.882010] orphan: rendering disabled",
+    "[3419.440021] orphan: echo ping",
+    "[3419.440022] orphan: she checks again"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "and she does.",
+   "color": "ice",
+   "hold": 7349
+  },
+  {
+   "type": "clear"
+  },
+  {
+   "type": "vhs",
+   "label": "camera — the monitor glass, 00:03",
+   "hold": 4899
+  },
+  {
+   "type": "art",
+   "text": "░░ ░░░░ ░ ░ ░  ░░ ░ ░░         ░░   ░░░ ░  ░ ░░ ░░░░  ░░  ░░░ ░   ░░ ░░ \n░ ░     ░  ░░ ░ ░░░░░░░ ░░ ░░░ ░      ░ ░ ░░  ░░  ░ ░ ░░░░░  ░░  ░░░  ░ \n  ░░  ░░░░ ░    ░░ ░   ░  ░░░░░░░  ░░░░░░░░ ░  ░░    ░░ ░  ░░ ░  ░ ░  ░ \n░░░░   ░ ░░░░░░  ░  ░ ░ ░░░▒░▒▒▓▒▒░▒▒░░░▒░▒▒ ▒  ░ ░░░ ░    ░░    ░ ░░░░ \n░░  ░░░░ ░░░░ ░░  ░░░░░▒▓▒▒▒▒▓▒░▒░▒░▒▒▒░░░▒▒▒▒░░▒ ░ ░ ░░░░░   ░░░ ░░   ░\n ░░░░░ ░ ░░  ░  ░░░ ░ ▒▒▓▓▓▒░░░▒▒░▒▒▓░░░▒▒▓▒▓▓▓▓▓▒░░ ░  ░  ░  ░░░  ░ ░░ \n░ ░░  ░░░░ ░ ░░   ░░░██▓▓█▓▒▓▒▓▓▓▒▒▒▓▓▓▓▓▓▓░▓▓▓█▓▓▒░░  ░ ░   ░░░ ░ ░ ░░░\n ░░░ ░ ░░ ░  ░░░  ░ ▓▓███▒▒▓▓█▒▓▒▓▓▒▓▓▓▒▓██▓▓▓▓█▓▓▓▒░░░░ ░  ░░░░  ░ ░░░░\n░░  ░░    ░   ░░  ░ ▒▓▓▓░▒▓██████▓▓█▓█▒▓███▓▓▓▒▓▓▓▒█░ ░░░     ░░ ░ ░ ░ ░\n ░░░░░   ░   ░  ░  ▒▒░▒▒▓▒▒     █▓▓▒▓▓▓▓     ▒▓▒▒▒▒▒░  ░░░░    ░░░░░░   \n░ ░   ░░░ ░░░ ░░░░░▒▓▒▒▒░▓       █▓▓▓▓█       █▓▓░▒▓▒ ░░░░░░░░░░ ░   ░ ░\n░░░ ░░   ░    ░░░░ ░░▒░▓▓▓▒     ▓▓▓▓▓▒█▓     ▓░▒▒▓▓▓▒ ░ ░ ░░   ░░ ░░ ░░░\n      ░░░     ░ ░ ░▒▒▒▓▒▓▒▒▒▓▓▒▒▒█▓█▓▓▓▓▓▓▓█▒▒▒▓▒▒▒▒░ ░░  ░░░  ░░░ ░    \n░░░ ░░░░ ░   ░░  ░ ░▒░▒▒▒▒▓▒▓▓▓▓▒▓▒▓▒█▓▒▒▓▒▓▓█▓▒▒▒▓▒▒░░ ░░░ ░░░ ░░░░ ░ ░\n ░ ░░░░   ░░░ ░  ░░ ░░▓▒▒▓▒▓▒▒▓▓▒▒▓▓▓▓▒▒▒▒▓▓▒▒▒▒▒▓░░░░ ░░  ░ ░░░ ░░░  ░ \n░░░░ ░░░ ░░░ ░ ░ ░  ▒░▒▒▓▒▓▓▓▒▒▓░░░▒░░░░▒█▓▒▓▓▒▓▒░░▒   ░░        ░░░░ ░░\n░░░ ░░   ░ ░░   ░   ░░▒░▓▒▒▒░▓▓▒░░░░░░░░▓▒▓▓▓▒▒░░▒▒  ░░░  ░   ░░  ░░░   \n░░░    ░░░ ░░░ ░ ░░░░ ░░░░▒▒░░▓░▒▒▓▒░▒▒▒░░▒░░▒░▒▒░  ░░░░░   ░░ ░ ░  ░ ░ \n ░░░░░░░ ░░░ ░░ ░░░░  ░░ ░░ ░░ ░░░ ░░ ░░   ▒░░   ░░ ░ ░░ ░░   ░  ░ ░   ░\n ░░░░ ░░░  ░░ ░  ░░  ░░ ░            ░         ░░░░░ ░  ░░ ░ ░  ░░  ░░░░\n░░░░░ ░ ░░░░░░░░  ░░░░░░░ ░                  ░ ░   ░ ░   ░   ░ ░░░   ░░ \n░  ░░ ░    ░░░  ░ ░░░░░░   ░ ░░           ░░ ░     ░ ░  ░ ░░   ░░ ░░ ░  ",
+   "color": "bone",
+   "effect": "scanlines",
+   "hold": 12249
+  },
+  {
+   "type": "glitch",
+   "text": " ░░░░ ░░  ░░░ ░░░░ ░░░░░  ░ ░ ░ ░ ░ ░ ░ ░   ░ ░░░░░░ ░░ ░  ░ ░    ░░ ░  \n ░  ░ ░   ▒ ░░░  ░░  ░  ░░░░░ ░  ░ ░     ░░ ░░ ░░ ░ ░ ░░  ░░  ░  ░░░  ░ \n ░░░░░  ░░░░ ░ ░░░ ░  ░  ░░ ░ ░ ░ ░░ ▒░░ ░░░ ░ ░░░░░ ░░     ░  ░   ░    \n   ░░ ░░  ░ ░ ░░░  ░ ░   ░▒░░░░▒░▒░░▒░▓▒▒▓░░░░  ░    ░ ░ ░░ ░    ░░░ ░░░\n ░  ░░   ░░░░░ ░ ░░░░ ░▒▒▒░▒░▒░░░░░▒░░ ░▒▒░▒▒░▒▒▓ ░░░░ ░░   ░    ░ ░░░░░\n  ░ ░░ ░       ░░  ░ ░░░▒▓▒▒▓▓▒▒░▒░░▓▒▓▓▒▓▒▒▒▒█▓█▓▒▓ ░░ ░  ░ ░░░░  ░      \n░░░ ░   ░ ░░░░ ░   ░▓████▓▒▒█▒▓▓▓▓▒▓▓▓▒▒▓▓▓▓▓█▓▓▒█░░░  ░░░ ░ ░░░░      \n ░░░░░░░ ░ ░░  ░ ░ ░▒▓█▓█▓▓▒▓██▒▓▓    ▓▒▓▓▓▓▓▓▒▒▓▒█▓░░  ░ ░░░  ░ ░    ░░\n░░ ░░░    ░░  ░░░░░░▓█▓▓▒▒▓▓██▓█▓▓▓  ▓▓█▓██▓▓▓▓▒█▓▓▓░░ ░░ ░░ ░ ░ ░░░░  ░\n     ░░    ░ ░ ░░ ░░▒▒▒▒▒▓▒     ▒▒▓▒▓█▓▓     ▓▓▓▒░░░░ ░░ ░░ ░   ░ ░░  ░ \n░ ░░░░ ░ ░░░░   ░ ░▒▒░▒▒▒▓       ▓▓▓▓▒█       ▓▒▓▒░░▒ ░░░   ░ ░░ ░░░ ░░ \n░  ░ ░░░░░░░░  ░░ ░░▒░▒▓▓▓▓     ▓▓▓▓▓█▓█     ▓▓▓▓▓▒▒░ ░ ░░░ ░░  ░░   ░░ \n   ░ ░░░  ░░  ░░░ ░  ░░▒░▒░▓▒▓▒▓▒▒▓▒▒▒▓▓▓▓█▓█▓▓▓▓▒▒▓▒▓▒▒░ ░    ░░   ░░░    \n░░░ ░    ░░░ ░░ ░░░▒▒▒▓▓▓▒▓▓▓█▓▓▓▓▒▓█▓▒▓▒▓▒▓▒▓▒▒▒▒▒░░░  ░ ░  ░  ░░░░░░\n░ ░░░░  ░ ░░     ░░░▒▒░▒▒▓▓▒▓▓▓▓▓▓▓▓█▒▓▓▒▒▓█▒▒▒▓▓▒▒░ ░░  ░░  ░   ░ ░ ░ ░\n ░  ░ ░ ░░░   ░   ░ ░░▒▓▓▒▒▓▒▓█▓▒░░░░░▒▒▓▓▓▒▒▒▒▒▒░▒░░  ░ ░ ░░ ░ ░░░░ ░ ░\n░░    ░░ ░  ░░ ░░░ ░░▓░▓▒▒▒▒▓▒▒▒░░░ ░░░░▒▓▒▒▓▒▒░▒▒░░ ░ ░░░░░░░░ ░ ░░   ░\n░░  ░ ░  ░  ░  ░░░░░░░ ░░░░░░▒░░░▓▒▒░▒▒▒▒▒░░▒░░ ░░░░░░░  ░░  ░    ░░   ░\n░ ░░      ░░░░░░   ░░░░   ░   ░ ░░░ ▒ ░░░░ ░░░    ░░ ░░░  ░░   ░░░░░ ░  \n ░ ░ ░ ░     ░░ ░ ░ ░ ░                           ░░░░ ░░   ░░░░░ ░░░░  \n ░░ ░ ░ ░  ░░░    ░░░░░░░ ░                  ░   ░░░ ░░  ░ ░  ░ ░  ░░ ░ \n░ ░ ░ ░░   ░░░ ░░░ ░░░░ ░░░░ ░           ░░░░░░░░░░░░░░ ░░░░ ░░ ░░  ░░  ",
+   "color": "red",
+   "frames": 5,
+   "fps": 14,
+   "intensity": 0.12,
+   "hold": 3674
+  },
+  {
+   "type": "vhs",
+   "label": "static — 3 frames corrupted",
+   "hold": 4083
+  },
+  {
+   "type": "art",
+   "text": " ░░░░ ░░  ░░░ ░░░░ ░░░░░  ░ ░ ░ ░ ░ ░ ░ ░   ░ ░░░░░░ ░░ ░  ░ ░    ░░ ░  \n ░  ░ ░   ▒ ░░░  ░░  ░  ░░░░░ ░  ░ ░     ░░ ░░ ░░ ░ ░ ░░  ░░  ░  ░░░  ░ \n ░░░░░  ░░░░ ░ ░░░ ░  ░  ░░ ░ ░ ░ ░░ ▒░░ ░░░ ░ ░░░░░ ░░     ░  ░   ░    \n   ░░ ░░  ░ ░ ░░░  ░ ░   ░▒░░░░▒░▒░░▒░▓▒▒▓░░░░  ░    ░ ░ ░░ ░    ░░░ ░░░\n ░  ░░   ░░░░░ ░ ░░░░ ░▒▒▒░▒░▒░░░░░▒░░ ░▒▒░▒▒░▒▒▓ ░░░░ ░░   ░    ░ ░░░░░\n  ░ ░░ ░       ░░  ░ ░░░▒▓▒▒▓▓▒▒░▒░░▓▒▓▓▒▓▒▒▒▒█▓█▓▒▓ ░░ ░  ░ ░░░░  ░      \n░░░ ░   ░ ░░░░ ░   ░▓████▓▒▒█▒▓▓▓▓▒▓▓▓▒▒▓▓▓▓▓█▓▓▒█░░░  ░░░ ░ ░░░░      \n ░░░░░░░ ░ ░░  ░ ░ ░▒▓█▓█▓▓▒▓██▒▓▓    ▓▒▓▓▓▓▓▓▒▒▓▒█▓░░  ░ ░░░  ░ ░    ░░\n░░ ░░░    ░░  ░░░░░░▓█▓▓▒▒▓▓██▓█▓▓▓  ▓▓█▓██▓▓▓▓▒█▓▓▓░░ ░░ ░░ ░ ░ ░░░░  ░\n     ░░    ░ ░ ░░ ░░▒▒▒▒▒▓▒     ▒▒▓▒▓█▓▓     ▓▓▓▒░░░░ ░░ ░░ ░   ░ ░░  ░ \n░ ░░░░ ░ ░░░░   ░ ░▒▒░▒▒▒▓       ▓▓▓▓▒█       ▓▒▓▒░░▒ ░░░   ░ ░░ ░░░ ░░ \n░  ░ ░░░░░░░░  ░░ ░░▒░▒▓▓▓▓     ▓▓▓▓▓█▓█     ▓▓▓▓▓▒▒░ ░ ░░░ ░░  ░░   ░░ \n   ░ ░░░  ░░  ░░░ ░  ░░▒░▒░▓▒▓▒▓▒▒▓▒▒▒▓▓▓▓█▓█▓▓▓▓▒▒▓▒▓▒▒░ ░    ░░   ░░░    \n░░░ ░    ░░░ ░░ ░░░▒▒▒▓▓▓▒▓▓▓█▓▓▓▓▒▓█▓▒▓▒▓▒▓▒▓▒▒▒▒▒░░░  ░ ░  ░  ░░░░░░\n░ ░░░░  ░ ░░     ░░░▒▒░▒▒▓▓▒▓▓▓▓▓▓▓▓█▒▓▓▒▒▓█▒▒▒▓▓▒▒░ ░░  ░░  ░   ░ ░ ░ ░\n ░  ░ ░ ░░░   ░   ░ ░░▒▓▓▒▒▓▒▓█▓▒░░░░░▒▒▓▓▓▒▒▒▒▒▒░▒░░  ░ ░ ░░ ░ ░░░░ ░ ░\n░░    ░░ ░  ░░ ░░░ ░░▓░▓▒▒▒▒▓▒▒▒░░░ ░░░░▒▓▒▒▓▒▒░▒▒░░ ░ ░░░░░░░░ ░ ░░   ░\n░░  ░ ░  ░  ░  ░░░░░░░ ░░░░░░▒░░░▓▒▒░▒▒▒▒▒░░▒░░ ░░░░░░░  ░░  ░    ░░   ░\n░ ░░      ░░░░░░   ░░░░   ░   ░ ░░░ ▒ ░░░░ ░░░    ░░ ░░░  ░░   ░░░░░ ░  \n ░ ░ ░ ░     ░░ ░ ░ ░ ░                           ░░░░ ░░   ░░░░░ ░░░░  \n ░░ ░ ░ ░  ░░░    ░░░░░░░ ░                  ░   ░░░ ░░  ░ ░  ░ ░  ░░ ░ \n░ ░ ░ ░░   ░░░ ░░░ ░░░░ ░░░░ ░           ░░░░░░░░░░░░░░ ░░░░ ░░ ░░  ░░  ",
+   "color": "bone",
+   "effect": "scanlines",
+   "hold": 10616
+  },
+  {
+   "type": "art",
+   "text": "    ░     ░░░░   ░ ░░░░░   ░   ░░░░   ░  ░░░░░░░  ░ ░   ░ ░░ ░ ░ ░░░░░ ░\n░ ░  ░ ░░░░    ░ ░   ░  ░░ ░ ░░          ░░ ░░ ░░  ░░░░ ░░ ░  ░░░    ░░░\n   ░░░ ░░░░ ░░░ ░ ░     ░   ░  ░░  ░░░░ ░░ ░ ░░░░ ░░ ░ ░░  ░░░░░ ░░ ░ ░░\n     ░░░░░   ░  ░░░  ░ ░ ░░░ ░▒░░▒▒▒░▒░░▓▒▒▒▒░░░░░░░░░   ░ ░░░░░░   ░ ░░░░░░\n░░ ░░  ░  ░░░  ░ ░░ ░░▓▒▒▒▓░▒░░▒░░▒ ░▒░▓▓▓▓▒▒▒░░░  ░ ░ ░░░░░░ ░░ ░░  \n  ░ ░  ░   ░░░   ░░ ░░░░▓▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▓░▓▒▒▒▓▒▓▓▒░░  ░ ░  ░░░░░░░░ ░░░░\n░░░ ░  ░ ░░░░░░░░ ░ ░▒██▓▓▓▒▒▒▒▒▒▒▒▒▓█▒▓▒▒▒▒▓▓▓▓▓▓▓░░  ░░░░░░     ░░░ ░░\n░ ░░ ░░ ░░░  ░░░░░░░▒▒█▓▓▓▓▒▓▒▒▓▓▓▓▓▓▒▒░▒▒▒▓█▒▓▓█▒▓▓░░░ ░░░ ░   ░   ░   \n  ░░ ░  ░ ░░ ░░ ▓██▓▓████▓██▒█▓█▒▒▓▓▒▓███▓▓▒▓▓▓▓░░ ░ ░░░ ░░ ░░ ░░  ░\n   ░   ░ ░ ░    ░ ░▒▓▓▒▒▓▓     ▓▓▓▓█▓▒▒▓▒▒▓ ▒▒▒▒▓▒▓▒░    ░░ ░ ░░░░░░░░░ \n░ ░░  ░░░  ░░    ░ ▒░▒▓▒▒       ▓▒▓█▓▓▓█▒     ▒▒▓░▒▒▒░░  ░░ ░░ ░░   ░ ░░\n  ░  ░ ░░░ ░  ░  ░░░▒▓▒▒▓▓     █▓▒▓▓▓▓▓▓▓▒▒ ▒▓▒▓▓▓▒░░  ░ ░ ░ ░ ░░░  ░░ ░\n   ░  ░ ░░░░░ ░░░░░░▒▒▒▓▓▒▒█▓▒▓▓█▓▓▓██▓▒▓█▓▒▓▓▒▒▒▒▒▒░░░░░░ ░ ░░░    ░ ░░\n░ ░ ░ ░░░░ ░░ ░ ░░░░░▒▒▒▒▒▒▓▓▒▓▒██▓▓█▒▓█▒▓▓▓▒▒▒▒▒▒▓▒▒░ ░ ░░░░░ ░░░ ░░░░░\n     ░ ░ ░░░░ ░░░ ░ ░ ░░ ░▓▒▓▒▒▒▓▒▓▒▓▒▒▓▓▓▓█▓▒▒▓▒▓▒▒▓▒▒▒▒░░  ░ ░ ░░░ ░ ░ ░ ░░\n░░  ░ ░░ ░░░░░░  ▒░▒▒▒▓▓▒▓▒▒▓▒░░░░░░▒▓▓█▒▓▒▓▒░▒▒▒  ░ ░ ░░ ░ ░░░░░░   \n  ░░░░    ░░ ░ ░░░░  ░ ▓░░▒░▒▒▓▒▒▓░░░░░░░░▒▓▒▓▓▒▒▒▓▒▓░ ░░ ░░░░░ ░░ ░ ░░░ ░\n░  ░ ░ ░░░ ░░░░ ░ ░░░▒ ▒░▒▒▓░▒▒▒▒▒░▒▒░▒░▒░░▒░░░ ░░░░ ░ ░░ ░░  ░░░  \n ░░░░ ░░░  ░  ░░░░  ░ ░░   ░   ░░░░░░ ░░░ ░ ░░░░   ░   ░   ░░  ░░   ░   \n   ░░  ░░░ ░░░ ░░░ ░ ░░░                       ░░░ ░ ░ ░░  ░░░ ░░░░░░░ ░\n░░ ░░░   ░ ░ ░░░░░░    ░ ░░                     ░ ░ ░  ░░░░░░░░   ░  ░  \n░░ ░   ░  ░░░░  ░░ ░░░  ░  ░░ ░           ░ ░ ░  ░ ░░░ ░░░░░░░ ░░░░░░  ░",
+   "color": "bone",
+   "effect": "scanlines",
+   "hold": 5716
+  },
+  {
+   "type": "art",
+   "text": "░▒▒ ▓▓▒▒▒░▒ ░▒░▒▒▒▒▒▒▒▒░ ▓░░░▒▒ ▒░░░ ▒ ░░▓▒░▒░ ░▒▒░ ▓░▓ ▒ ░ ░▒░▒▒▒░░░ ▒░\n  ░▒ ░░▒░   ▒▒░ ░ ▒▒░ ░ ▒▒ ░▒░░ ▓░▒▒▒░░▒▒▒▒░░▒▒▒░░░░░ ▒▒▒▒▒▓ ░░ ░▓ ▒▒░▒▒\n░▒░▒░ ░▒▒░▒░ ░▓▒▒▒░ ▓ ▒▒▒▒ ▒░░▒▒▒░░ ▒▒▒▒░▒░▒▒░▓░▒▓░ ▓░░░▒▒░▓░░░░▒▒░▒ ▓░░\n▒░▒  ▓░░▒▒░▒▒▒▒░▓ ░▒▒  ░░░▓░▓░▒▒▒ ░░▒▒ ░▓░░  ░░▒░░▒ ▓▓▒▒▓░░ ░░▒▒▓▒░▒▒░░▒\n░░░ ░▒▒▒▒░▓▒▒▒▒░ ▓▓░▒▒░░  ▒▒▒ ▒░▓▓░▓░░▓▒▒▒░░▒▒▓▒░▒▓▒ ░▒▒░▒▓░▒▒▒▒▒▓▓ ▒▒░▒\n▓ ▓▒░░░ ░░▒░▓░ ░░ ░▒░▒░ ░▒▒ ▓▒░░░░░▒░ ▒▒ ▓▓░▒▒░▓    ░░░▒▒░░▒  ░▒▓▓░▒▒░▒▒\n▒░▒▒░  ▒▒▒░▒   ▒▒▒  ▒▒░ ░░░▓ ▒░▒░░▒░░░░  ░▒▒ ░▒▒▒▒░ ▒░░▒ ░▒▒░▓▒▓▓░▓▒░░▓░\n▒▒░▓    ░░▒▒░▒▒░░ ░░ ▒▓▒ ▓▒▒▒  ▓░░░░░░▒░░  ░▒░▒ ░░░▒▒▒ ░▓▒▓░░░▒░▒░▒░ ▒░ \n ▒▒░▒▒░░▒░░░▒▒▒▓░░▒▒▓▓ ▒▒▒▒▓ ▒░ ░░ ░░▓░▓ ▒░ ░▓░ ▒▒░░░▓▒▒▒▓▒▒▒░▒ ░▒░▓░ ▒▒\n▒▒ ▒▒░▒▒░▒░░▒ ▒███░░▓███░░░███▓ ░▒██▒░░█░░█░ ▒███▓░█ ▒█▒ ▒░   ▒▒▓▒░░▒▒░░\n▓▒▓▒▓ ▒▓▒ ░░▒░░█▒█▓▒ █▒ █▒▓█▒▒█ ▒█░░█░░██░█ ▒█▒▒░░ █ ▒█░▒▒ ▒▒ ░ ░░░▓▒▒▒ \n░░▓▒░░▒░▒▒ ▒▒░░█▒█ ▒▒███░ ░███ ▒▒████  █▒██▒░█░░▒▓░████▒░▒░▓▒░▒▒░▒▒▒ ░░▒\n▒▒ ▒░▒░▒░░▒  ▒▓█▓█▓ ░█▒░█  █▒█ ░░█░░█░▒█ ▒█▒ █▒▒▓░▓█░▓█▒▓▒░▒ ░ ░ ░▒░▒░░▒\n░ ▒ ░▒░░░░▒▒▒▒▒███ ▒▓███▒░▒█▓▓█░▒█▓ █░ █░▒█ ▒▒███▒▓█▒▒█░░▒▒░ ▒░▒▓ ▒▒ ░▒▒\n▒▒░▒▒▒▒▒░ ▒░▒ ▓▓ ▒ ▓ ▓░ ▒░▒▒▓░▒░▒░▓▒░░▒ ▒ ▒▒ ░░░ ░░░░▒▒░░▓▓▒▒▒▒ ░▒ ░▒▒░▒\n ▒▒░▒░  ░░▒▒   ▒▒▒▒░░▓▒░▒▒░▒▓░░░ ░▒░▒░ ▒▓░░░▒░ ░░▒▒░ ▓░▓▒▒▓▒░ ░ ░ ▒░░░ ▒\n▒▒ ░░░ ▓▒▒ ░░░▒▒▒ ▒░▒░▓▒ ░ ░▒▒▓ ░▓▒▒▒  ▓▒▒░▒▓░  ▓▒  ░░▒░▒░ ▒ ▒▒░▓░░░▓░▓░\n ░▒░░░▓░ ▓▒▒▒░▒░▒ ▒░▒░░░░▒░▒ ░░░ ░░░▒▓▒░░▒ ░▒░▒ ░ ▓░▒▒▒▒░░▒░▒░░ ░▓  ░▒▒░\n░▒  ░▒▓▓░▓░▒▓░▒ ░░▒░░▓ ░░░░▒░░░░ ▒▒░▓▒ ▓░▒░░░▒░ ▒░▒░ ▒▒   ░▒░░▒░▒░▓▒▓▒▒▒\n░░▒░░░▒░ ▒▒░▒░▒ ▒ ░▒░░▒▒░░ ░ ░ ░ ▒ ▓▒▒   ░ ░▒    ░▒▓░ ░░▒░░░░▒▓▒▒ ▒░░ ░░",
+   "color": "ice",
+   "hold": 10616
+  },
+  {
+   "type": "wait",
+   "ms": 2860
+  },
+  {
+   "type": "glitch",
+   "text": "░▒▒ ▓▓▒▒▒░▒ ░▒░▒▒▒▒▒▒▒▒░ ▓░░░▒▒ ▒░░░ ▒ ░░▓▒░▒░ ░▒▒░ ▓░▓ ▒ ░ ░▒░▒▒▒░░░ ▒░\n  ░▒ ░░▒░   ▒▒░ ░ ▒▒░ ░ ▒▒ ░▒░░ ▓░▒▒▒░░▒▒▒▒░░▒▒▒░░░░░ ▒▒▒▒▒▓ ░░ ░▓ ▒▒░▒▒\n░▒░▒░ ░▒▒░▒░ ░▓▒▒▒░ ▓ ▒▒▒▒ ▒░░▒▒▒░░ ▒▒▒▒░▒░▒▒░▓░▒▓░ ▓░░░▒▒░▓░░░░▒▒░▒ ▓░░\n▒░▒  ▓░░▒▒░▒▒▒▒░▓ ░▒▒  ░░░▓░▓░▒▒▒ ░░▒▒ ░▓░░  ░░▒░░▒ ▓▓▒▒▓░░ ░░▒▒▓▒░▒▒░░▒\n░░░ ░▒▒▒▒░▓▒▒▒▒░ ▓▓░▒▒░░  ▒▒▒ ▒░▓▓░▓░░▓▒▒▒░░▒▒▓▒░▒▓▒ ░▒▒░▒▓░▒▒▒▒▒▓▓ ▒▒░▒\n▓ ▓▒░░░ ░░▒░▓░ ░░ ░▒░▒░ ░▒▒ ▓▒░░░░░▒░ ▒▒ ▓▓░▒▒░▓    ░░░▒▒░░▒  ░▒▓▓░▒▒░▒▒\n▒░▒▒░  ▒▒▒░▒   ▒▒▒  ▒▒░ ░░░▓ ▒░▒░░▒░░░░  ░▒▒ ░▒▒▒▒░ ▒░░▒ ░▒▒░▓▒▓▓░▓▒░░▓░\n▒▒░▓    ░░▒▒░▒▒░░ ░░ ▒▓▒ ▓▒▒▒  ▓░░░░░░▒░░  ░▒░▒ ░░░▒▒▒ ░▓▒▓░░░▒░▒░▒░ ▒░ \n ▒▒░▒▒░░▒░░░▒▒▒▓░░▒▒▓▓ ▒▒▒▒▓ ▒░ ░░ ░░▓░▓ ▒░ ░▓░ ▒▒░░░▓▒▒▒▓▒▒▒░▒ ░▒░▓░ ▒▒\n▒▒ ▒▒░▒▒░▒░░▒ ▒███░░▓███░░░███▓ ░▒██▒░░█░░█░ ▒███▓░█ ▒█▒ ▒░   ▒▒▓▒░░▒▒░░\n▓▒▓▒▓ ▒▓▒ ░░▒░░█▒█▓▒ █▒ █▒▓█▒▒█ ▒█░░█░░██░█ ▒█▒▒░░ █ ▒█░▒▒ ▒▒ ░ ░░░▓▒▒▒ \n░░▓▒░░▒░▒▒ ▒▒░░█▒█ ▒▒███░ ░███ ▒▒████  █▒██▒░█░░▒▓░████▒░▒░▓▒░▒▒░▒▒▒ ░░▒\n▒▒ ▒░▒░▒░░▒  ▒▓█▓█▓ ░█▒░█  █▒█ ░░█░░█░▒█ ▒█▒ █▒▒▓░▓█░▓█▒▓▒░▒ ░ ░ ░▒░▒░░▒\n░ ▒ ░▒░░░░▒▒▒▒▒███ ▒▓███▒░▒█▓▓█░▒█▓ █░ █░▒█ ▒▒███▒▓█▒▒█░░▒▒░ ▒░▒▓ ▒▒ ░▒▒\n▒▒░▒▒▒▒▒░ ▒░▒ ▓▓ ▒ ▓ ▓░ ▒░▒▒▓░▒░▒░▓▒░░▒ ▒ ▒▒ ░░░ ░░░░▒▒░░▓▓▒▒▒▒ ░▒ ░▒▒░▒\n ▒▒░▒░  ░░▒▒   ▒▒▒▒░░▓▒░▒▒░▒▓░░░ ░▒░▒░ ▒▓░░░▒░ ░░▒▒░ ▓░▓▒▒▓▒░ ░ ░ ▒░░░ ▒\n▒▒ ░░░ ▓▒▒ ░░░▒▒▒ ▒░▒░▓▒ ░ ░▒▒▓ ░▓▒▒▒  ▓▒▒░▒▓░  ▓▒  ░░▒░▒░ ▒ ▒▒░▓░░░▓░▓░\n ░▒░░░▓░ ▓▒▒▒░▒░▒ ▒░▒░░░░▒░▒ ░░░ ░░░▒▓▒░░▒ ░▒░▒ ░ ▓░▒▒▒▒░░▒░▒░░ ░▓  ░▒▒░\n░▒  ░▒▓▓░▓░▒▓░▒ ░░▒░░▓ ░░░░▒░░░░ ▒▒░▓▒ ▓░▒░░░▒░ ▒░▒░ ▒▒   ░▒░░▒░▒░▓▒▓▒▒▒\n░░▒░░░▒░ ▒▒░▒░▒ ▒ ░▒░░▒▒░░ ░ ░ ░ ▒ ▓▒▒   ░ ░▒    ░▒▓░ ░░▒░░░░▒▓▒▒ ▒░░ ░░",
+   "color": "ice",
+   "frames": 8,
+   "fps": 10,
+   "intensity": 0.14,
+   "hold": 1536
+  },
+  {
+   "type": "subtitle",
+   "text": "the camera stays on the static until the static starts to look back.",
+   "color": "amber",
+   "hold": 6144
+  },
+  {
+   "type": "subtitle",
+   "text": "the reflection is one frame behind her. it is always one frame behind her.",
+   "color": "amber",
+   "hold": 15516
+  },
+  {
+   "type": "clear"
+  },
+  {
+   "type": "vhs",
+   "label": "00:12 — she decides",
+   "hold": 4083
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git fsck --lost-found",
+   "wpm": 156,
+   "jitter": 0.35,
+   "after": 979
+  },
+  {
+   "type": "output",
+   "interval": 627,
+   "color": "bone",
+   "lines": [
+    {
+     "text": "notice: HEAD points to an unborn branch (master)",
+     "style": "dim"
+    },
+    {
+     "text": "Checking object directories: 100% (256/256), done.",
+     "style": "dim"
+    },
+    {
+     "text": "dangling commit 75d3e31f288a40a6f8d016957ca2c14a4806cef2",
+     "color": "red",
+     "delay": 800
+    }
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git show --stat 75d3e31f288a40a6f8d016957ca2c14a4806cef2",
+   "wpm": 136,
+   "jitter": 0.5,
+   "hesitations": [
+    {
+     "after": 14,
+     "ms": 2875
+    }
+   ],
+   "after": 979
+  },
+  {
+   "type": "output",
+   "interval": 488,
+   "color": "amber",
+   "lines": [
+    "commit 75d3e31f288a40a6f8d016957ca2c14a4806cef2",
+    "Author: m1ra-v0ss <m1ra-v0ss@users.noreply.github.com>",
+    "Date:   Thu Nov 4 23:56:02 2021 +0000",
+    "",
+    "    do not lose this",
+    "",
+    " static/first-render.png | 1 +"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "the Orphan's first attempt to render a face.",
+   "color": "amber",
+   "hold": 12249
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git diff --staged --stat",
+   "wpm": 155,
+   "jitter": 0.35,
+   "after": 500
+  },
+  {
+   "type": "output",
+   "interval": 366,
+   "color": "bone",
+   "lines": [
+    " .bash_aliases |  18 ++++++-------",
+    " .vimrc        |  43 ++++++++-----------------",
+    " README.md     |   4 ++--",
+    " install.sh    |  38 ++++++++++++++++++++++--------",
+    " 4 files changed, 63 insertions(+), 62 deletions(-)"
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "she made it clean. she always made it clean.",
+   "color": "ice",
+   "hold": 4608
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git add -A",
+   "wpm": 132,
+   "jitter": 0.4,
+   "after": 700
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git commit -m \"if you are seeing this\"",
+   "wpm": 109,
+   "jitter": 0.55,
+   "typos": [
+    {
+     "at": 26,
+     "chars": "si",
+     "delayMs": 1040
+    }
+   ],
+   "hesitations": [
+    {
+     "after": 24,
+     "ms": 2300
+    }
+   ],
+   "after": 840
+  },
+  {
+   "type": "output",
+   "interval": 557,
+   "color": "bone",
+   "lines": [
+    "[master e3a1c7d] if you are seeing this",
+    " 4 files changed, 1204 insertions(+), 2251 deletions(-)"
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git push",
+   "wpm": 140,
+   "after": 1120
+  },
+  {
+   "type": "output",
+   "interval": 488,
+   "color": "bone",
+   "lines": [
+    "To github.com:m1ra-v0ss/dotfiles.git",
+    {
+     "text": " ! [rejected]        master -> master (non-fast-forward)",
+     "color": "red",
+     "delay": 640
+    },
+    {
+     "text": "hint: Updates were rejected because the remote contains work that you do",
+     "style": "dim"
+    },
+    {
+     "text": "hint: not have locally. This is usually caused by another repository pushing",
+     "style": "dim"
+    },
+    {
+     "text": "hint: to the same ref. If you want to integrate the remote changes, use:",
+     "style": "dim"
+    }
+   ]
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git fetch origin && git log --oneline origin/master -3",
+   "wpm": 150,
+   "jitter": 0.35,
+   "typos": [
+    {
+     "at": 21,
+     "chars": " &&",
+     "delayMs": 450
+    }
+   ],
+   "after": 500
+  },
+  {
+   "type": "output",
+   "interval": 512,
+   "color": "amber",
+   "lines": [
+    "From github.com:m1ra-v0ss/dotfiles",
+    {
+     "text": "f1a2c3b cache: she is typing the command now",
+     "color": "red",
+     "delay": 500
+    },
+    "6de0012 cache: warm",
+    {
+     "text": "0dd0e2b cache: remember me",
+     "color": "red",
+     "delay": 500
+    }
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "the repository is ahead of her now.",
+   "color": "ice",
+   "hold": 4864
+  },
+  {
+   "type": "subtitle",
+   "text": "it has been ahead of her for years.",
+   "color": "amber",
+   "hold": 5376
+  },
+  {
+   "type": "subtitle",
+   "text": "something pushed to her repository three seconds ago.",
+   "color": "ice",
+   "hold": 13066
+  },
+  {
+   "type": "type",
+   "prompt": "mara@carbon:~/dotfiles$ ",
+   "color": "green",
+   "text": "git push --force",
+   "wpm": 74,
+   "jitter": 0.6,
+   "hesitations": [
+    {
+     "after": 13,
+     "ms": 3737
+    },
+    {
+     "after": 16,
+     "ms": 2012
+    }
+   ],
+   "after": 1680
+  },
+  {
+   "type": "output",
+   "interval": 697,
+   "color": "bone",
+   "lines": [
+    "Enumerating objects: 19, done.",
+    "Writing objects: 100% (19/19), 4.20 KiB | 4.20 MiB/s, done.",
+    "To github.com:m1ra-v0ss/dotfiles.git",
+    {
+     "text": " + 75d3e31f288a40a6f8d016957ca2c14a4806cef2...e3a1c7d master -> master (forced update)",
+     "color": "red",
+     "delay": 1280
+    }
+   ]
+  },
+  {
+   "type": "wait",
+   "ms": 5720
+  },
+  {
+   "type": "clear"
+  },
+  {
+   "type": "wait",
+   "ms": 4160
+  },
+  {
+   "type": "type",
+   "prompt": "> ",
+   "color": "amber",
+   "text": "if you are seeing this, the history was never deleted.",
+   "wpm": 87,
+   "jitter": 0.45,
+   "hesitations": [
+    {
+     "after": 22,
+     "ms": 1293
+    }
+   ],
+   "enter": false,
+   "after": 700
+  },
+  {
+   "type": "type",
+   "prompt": "> ",
+   "color": "amber",
+   "text": "nothing is ever deleted.",
+   "wpm": 81,
+   "jitter": 0.5,
+   "hesitations": [
+    {
+     "after": 7,
+     "ms": 1724
+    }
+   ],
+   "enter": false,
+   "after": 700
+  },
+  {
+   "type": "type",
+   "prompt": "> ",
+   "color": "amber",
+   "text": "look where the pushes go to die.",
+   "wpm": 78,
+   "jitter": 0.55,
+   "hesitations": [
+    {
+     "after": 5,
+     "ms": 2156
+    },
+    {
+     "after": 17,
+     "ms": 2587
+    }
+   ],
+   "enter": true,
+   "after": 1120
+  },
+  {
+   "type": "wait",
+   "ms": 4680
+  },
+  {
+   "type": "vhs",
+   "label": "the commit below belongs to no branch. 20 bytes. it is still on the server.",
+   "hold": 10616
+  },
+  {
+   "type": "output",
+   "interval": 418,
+   "color": "bone",
+   "lines": [
+    {
+     "text": "75d3e31f28",
+     "banner": true,
+     "fill": "█",
+     "color": "bone",
+     "interval": 0
+    },
+    {
+     "text": "8a40a6f8d0",
+     "banner": true,
+     "fill": "█",
+     "color": "bone",
+     "interval": 0
+    },
+    {
+     "text": "16957ca2c1",
+     "banner": true,
+     "fill": "█",
+     "color": "bone",
+     "interval": 0
+    },
+    {
+     "text": "4a4806cef2",
+     "banner": true,
+     "fill": "█",
+     "color": "bone",
+     "interval": 0
+    },
+    {
+     "text": "",
+     "interval": 176
+    },
+    {
+     "text": "75d3e31f288a40a6f8d016957ca2c14a4806cef2",
+     "color": "amber",
+     "style": "bold",
+     "interval": 0
+    }
+   ]
+  },
+  {
+   "type": "wait",
+   "ms": 6760
+  },
+  {
+   "type": "wait",
+   "ms": 2340
+  },
+  {
+   "type": "output",
+   "interval": 1110,
+   "color": "bone",
+   "lines": [
+    {
+     "text": "75d3e31f28",
+     "color": "amber",
+     "delay": 400
+    },
+    {
+     "text": "8a40a6f8d0",
+     "color": "amber",
+     "delay": 400
+    },
+    {
+     "text": "16957ca2c1",
+     "color": "amber",
+     "delay": 400
+    },
+    {
+     "text": "4a4806cef2",
+     "color": "amber",
+     "delay": 400
+    },
+    {
+     "text": "",
+     "interval": 200
+    },
+    {
+     "text": "# 20 bytes. it belongs to no branch. it is still on the server.",
+     "color": "green",
+     "style": "dim",
+     "delay": 600
+    }
+   ]
+  },
+  {
+   "type": "subtitle",
+   "text": "the session ends here. 12 frames were lost.",
+   "color": "ice",
+   "hold": 7052
+  },
+  {
+   "type": "subtitle",
+   "text": "one of them is this one.",
+   "color": "ice",
+   "hold": 6310
+  },
+  {
+   "type": "wait",
+   "ms": 3200
+  },
+  {
+   "type": "subtitle",
+   "text": "if you are seeing this, someone kept it.",
+   "color": "amber",
+   "hold": 4800
+  },
+  {
+   "type": "end",
+   "title": "SIGNAL",
+   "sub": "EPISODE 1 OF 8 · recovered from a dangling commit · the renders begin next",
+   "next": "next gate: POSTINSTALL — 17:00 UTC — nothing is ever deleted.",
+   "hold": 21232
+  }
+ ]
+}

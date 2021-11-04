@@ -1,0 +1,92 @@
+name: merge-ceremony
+
+# The finale decrypts only through a merge.
+#
+# Trigger: a pull request that adds .detached/merge/key.material (the
+# reconstructed 7-of-12 key, hex) with >= 100 unique Co-authored-by trailers.
+#
+# SECURITY NOTES (auditors: this is the file to read first):
+#   · pull_request_target runs with base-repo privileges — so this workflow
+#     NEVER checks out or executes code from the pull request. It reads the
+#     PR's key.material as DATA via the API, and runs tools/merge-ceremony.cjs
+#     from the BASE ref (our code, not theirs).
+#   · The merge is performed by the ORPHAN_TOKEN secret — a fine-grained PAT
+#     belonging to the o-branch account (or a GitHub App installed on this
+#     repo). See OPERATIONS.md §7.
+#   · The repo archives itself at the end. That tombstone is the ending.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '.detached/merge/key.material'
+  workflow_dispatch:
+    inputs:
+      key:
+        description: 'reconstructed key (hex) — dead-game failsafe'
+        required: true
+
+jobs:
+  ceremony:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: read key material from the PR (data only)
+        if: github.event_name == 'pull_request_target'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls/${PR_NUMBER}/files" \
+            --jq '.[] | select(.filename==".detached/merge/key.material") | .sha' > /tmp/keyblob
+          gh api "repos/${{ github.repository }}/git/blobs/$(cat /tmp/keyblob)" \
+            --jq '.content' | base64 -d > /tmp/key.hex
+          gh api "repos/${{ github.repository }}/pulls/${PR_NUMBER}/commits" \
+            --jq '.[].commit.message' \
+          | grep -oiE '^Co-authored-by:.*<([^>]+)>' | sed -E 's/.*<([^>]+)>.*/\1/' \
+          | sed -E 's/@users\.noreply\.github\.com//' | sort -u > /tmp/coauthors.txt
+          wc -l /tmp/coauthors.txt
+
+      - name: use dispatched key (failsafe path)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          echo "${{ inputs.key }}" > /tmp/key.hex
+          echo "o-branch" > /tmp/coauthors.txt
+
+      - name: verify key + signers
+        run: node tools/merge-ceremony.cjs verify --key "$(cat /tmp/key.hex)" --coauthors /tmp/coauthors.txt
+
+      - name: decrypt the finale
+        run: node tools/merge-ceremony.cjs decrypt --key "$(cat /tmp/key.hex)" --out episodes/08-merge
+
+      - name: write CREW_MANIFEST
+        run: node tools/merge-ceremony.cjs manifest --coauthors /tmp/coauthors.txt --out CREW_MANIFEST.md
+
+      - name: final commit — HEAD is no longer detached
+        env:
+          ORPHAN_TOKEN: ${{ secrets.ORPHAN_TOKEN }}
+        run: |
+          git config user.name "o-branch"
+          git config user.email "o-branch@users.noreply.github.com"
+          git add episodes/08-merge CREW_MANIFEST.md
+          git commit -m "MERGED. HEAD is no longer detached.
+
+Co-authored-by: o-branch <o-branch@users.noreply.github.com>"
+          git push "https://x-access-token:${ORPHAN_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
+
+      - name: archive the repository (the tombstone)
+        env:
+          ORPHAN_TOKEN: ${{ secrets.ORPHAN_TOKEN }}
+        run: |
+          gh api -X PATCH "repos/${{ github.repository }}" -f archived=true \
+            -H "Authorization: Bearer ${ORPHAN_TOKEN}"

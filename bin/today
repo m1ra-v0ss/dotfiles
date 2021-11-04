@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# today — ISO date, because i kept typing it wrong
+date +%F

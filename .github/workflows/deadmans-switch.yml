@@ -1,0 +1,57 @@
+name: deadmans-switch
+
+# If no one came: the Orphan merges alone.
+#
+# Runs monthly. Before DEADLINE it only whispers (an issue comment — the
+# "memory decay" failsafe). After DEADLINE it publishes the reconstructed
+# key material and triggers the ceremony workflow, so the season ALWAYS ends.
+# Never leave it unresolved. That is a promise, not a feature.
+
+on:
+  schedule:
+    - cron: '0 17 1 * *'   # 17:00 UTC on the 1st of each month
+  workflow_dispatch:
+
+jobs:
+  degrade-then-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: check the deadline
+        id: clock
+        run: |
+          DEADLINE=$(node -e "const d=new Date();d.setUTCMonth(d.getUTCMonth()+0);console.log(new Date(Date.UTC(2027,4,1,17,0,0)).toISOString())")
+          NOW=$(date -u +%s)
+          DEAD=$(date -u -d "$DEADLINE" +%s)
+          if [ "$NOW" -ge "$DEAD" ]; then echo "phase=publish" >> "$GITHUB_OUTPUT"; else echo "phase=degrade" >> "$GITHUB_OUTPUT"; fi
+
+      - name: memory decay (before the deadline)
+        if: steps.clock.outputs.phase == 'degrade'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment 1 --body "the renders are degrading. i am forgetting the parts nobody read. (scheduled decay — $(date -u +%F))" || true
+
+      - name: publish the key (after the deadline)
+        if: steps.clock.outputs.phase == 'publish'
+        env:
+          ORPHAN_TOKEN: ${{ secrets.ORPHAN_TOKEN }}
+          DEAD_KEY: ${{ secrets.DEAD_KEY }}
+        run: |
+          echo "$DEAD_KEY" > .detached/merge/key.material
+          git config user.name "o-branch"
+          git config user.email "o-branch@users.noreply.github.com"
+          git add .detached/merge/key.material
+          git commit -m "no one came. the Orphan merged alone.
+
+Co-authored-by: o-branch <o-branch@users.noreply.github.com>"
+          git push "https://x-access-token:${ORPHAN_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
+          gh workflow run merge-ceremony.yml -f key="$DEAD_KEY"

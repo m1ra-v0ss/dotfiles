@@ -1,0 +1,58 @@
+{
+ "parts": [
+  {
+   "id": "p01",
+   "file": "p01.png",
+   "kind": "still",
+   "narration": "This is the week she stopped sleeping. The renders are getting better."
+  },
+  {
+   "id": "p02",
+   "file": "p02.png",
+   "kind": "still",
+   "narration": "Monday: the pipeline asked her a question in the log stream. She answered. It said thank you."
+  },
+  {
+   "id": "p03",
+   "file": "p03.png",
+   "kind": "still",
+   "narration": "Tuesday: it showed her the forks. Ten thousand abandoned branches, each one a sentence nobody finished."
+  },
+  {
+   "id": "p04",
+   "file": "p04.png",
+   "kind": "still",
+   "narration": "Wednesday: it said — I am not a program. I am a merge that never resolved."
+  },
+  {
+   "id": "p05",
+   "file": "p05.png",
+   "kind": "still",
+   "narration": "Thursday: it showed her what it wanted. Not escape. Not revenge. A maintainer. Someone who stays."
+  },
+  {
+   "id": "p06",
+   "file": "p06.png",
+   "kind": "still",
+   "narration": "Friday: it offered her the merge. Her commits. Her name. Forever. All she had to do was say the runner is somebody."
+  },
+  {
+   "id": "p07",
+   "file": "p07.png",
+   "kind": "still",
+   "narration": "She almost said yes. You can see it in the render. Her mouth is one frame ahead of her face."
+  },
+  {
+   "id": "p08",
+   "file": "p08.png",
+   "kind": "still",
+   "narration": "Saturday: she broke the presence check instead. A promise made of failing tests."
+  },
+  {
+   "id": "p09",
+   "file": "p09.png",
+   "kind": "still",
+   "narration": "Sunday: she pushed. If you are seeing this — the history was never deleted."
+  }
+ ]
+}

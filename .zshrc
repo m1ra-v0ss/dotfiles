@@ -1,45 +1,22 @@
-# zsh
+# zsh — carry-over since 2018. half of this i don't remember writing.
+
 export EDITOR=vim
-PROMPT="%# "
-# reduce vim startup by trimming unused plugins
-# zsh: base rc file
-# rotate local history, keep 50k lines
-# prompt: blue path, plain percent
-# history: bigger savehist
-# zsh: faster startup
-# quote paths in mk() for safety
-# zsh: local overrides file
-# prompt: drop the clock segment
-# simplify the prompt to two segments
-# zsh: share history between sessions
-# add install.sh dry-run mode
-# zsh: compinit -C
-# zsh: ignore dups
-# ignore .DS_Store properly
-# prompt: two segments only
-# zsh: quoted paths
-# document the backup behavior
-# zsh: faster compinit
-# restore the vi-mode indicator
-# zsh: xdg dirs
-# prompt: percent over hash for users
-# small cleanup in .bash_aliases
-# zsh: hist ignore space
-# status line shows session name
-# zsh: completion cache path
-# zsh: prompt segment order
-# handle spaces in DOTFILES_DIR
-# keep backups for 30 days
-# zsh: last aliases
-# zsh: base rc file
-# tmux: sane copy-mode keys
-# move scripts to bin/
-# prompt: blue path, plain percent
-# history: bigger savehist
-# zsh: faster startup
-# quiet the last login message
-# zsh: local overrides file
-# prompt: drop the clock segment
-# wait for me
-# zsh: share history between sessions
-# zsh: compinit -C
+export HISTFILE=~/.zsh_history
+export HISTSIZE=50000
+export SAVEHIST=50000
+setopt HIST_IGNORE_DUPS SHARE_HISTORY EXTENDED_HISTORY
+
+# prompt: two segments, nothing clever
+PROMPT='%F{blue}%~%f %# '
+
+# completion
+autoload -Uz compinit
+compinit -C
+
+alias ll='ls -lah'
+alias ..='cd ..'
+alias serve='python3 -m http.server'
+alias today='date +%F'
+
+# local overrides, never tracked
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

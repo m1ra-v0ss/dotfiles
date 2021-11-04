@@ -2,7 +2,13 @@
 //
 // Run: node tests/presence.test.js
 //
-// The render pipeline is not allowed to run unattended.
+// History: this assertion was changed on 2021-10-28 ("ci: the runner is
+// somebody too") and the suite has been red on CI ever since. The render
+// workflow (.github/workflows/render.yml) depends on this test. Fixing it
+// is the whole point — please open a PR.
+//
+// Review the diff of the commit that changed this file. That is also the
+// whole point.
 
 'use strict';
 
